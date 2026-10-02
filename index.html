@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Your Name | Portfolio</title>
+<title>James Adams | Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
@@ -52,6 +52,16 @@
     letter-spacing: -0.02em;
     margin: 0 0 1.5rem;
   }
+  .hero { display: flex; align-items: center; gap: 2.5rem; margin-bottom: 1.5rem; }
+  .headshot {
+    width: clamp(8rem, 20vw, 11rem);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--scarlet);
+    flex-shrink: 0;
+  }
+  .hero .name { margin: 0; }
   .statement {
     font-size: clamp(1.2rem, 2.4vw, 1.5rem);
     line-height: 1.5;
@@ -107,6 +117,7 @@
 
   @media (max-width: 640px) {
     header { padding-top: 3.5rem; }
+    .hero { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
     .project { grid-template-columns: 1fr; gap: 0.5rem; }
   }
 </style>
@@ -115,14 +126,16 @@
 
 <header>
   <div class="wrap">
-    <h1 class="name">Your Name</h1>
+    <div class="hero">
+      <img class="headshot" src="headshot.jpg" alt="Headshot of James Adams">
+      <h1 class="name">James Adams</h1>
+    </div>
     <p class="statement">
       A Rutgers student-athlete on the men's lacrosse team, studying Management and Leadership, who brings a competitor's discipline and a teammate's mindset to a future career in real estate development.
     </p>
     <div class="contact">
-      <a href="mailto:you@example.com">you@example.com</a>
-      <a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a>
-      <a href="#">Résumé (PDF)</a>
+      <a href="mailto:jma516@scarletmail.rutgers.edu">jma516@scarletmail.rutgers.edu</a>
+      <a href="https://www.linkedin.com/in/deacon-adams-jma17">LinkedIn</a>
     </div>
   </div>
 </header>
@@ -208,7 +221,7 @@
 </main>
 
 <footer>
-  <div class="wrap">© 2026 Your Name. New Brunswick, NJ.</div>
+  <div class="wrap">© 2026 James Adams. New Brunswick, NJ.</div>
 </footer>
 
 </body>
